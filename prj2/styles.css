@@ -69,13 +69,6 @@ input, textarea, select, button {
     padding: 1em;
 }
 
-.calendar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1em;
-}
-
 .calendar-header button {
     background: var(--accent);
     color: #fff;
@@ -89,12 +82,6 @@ input, textarea, select, button {
     background: #3573d6;
 }
 
-.calendar-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 0.2em;
-    text-transform: uppercase;
-}
 
 .calendar-day,
 .calendar-weekday {
@@ -149,36 +136,48 @@ input, textarea, select, button {
     font-family: Arial, sans-serif;
     color: var(--text-color);
 }
+
 .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
     text-align: center;
     font-size: 1.5em;
-    margin-bottom: 10px;
     font-weight: bold;
     color: var(--text-color);
 }
+
 .calendar-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 4px;
+    gap: 0.2em;
+    text-transform: uppercase;
 }
+
+
 .calendar-grid div {
     text-align: center;
     padding: 8px 0;
     border-radius: 4px;
     color: var(--text-color);
 }
+
 .calendar-grid .day {
     background: var(--card-bg);
     cursor: pointer;
     transition: background 0.2s;
 }
+
 .calendar-grid .day.today {
     background: var(--today-bg);
     border: 1px solid var(--accent);
 }
+
 .calendar-grid .empty {
     background: transparent;
 }
+
 .calendar-grid div:nth-child(-n+7) {
     font-weight: bold;
     background: var(--today-bg);
