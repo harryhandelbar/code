@@ -6,6 +6,7 @@
         --border: #333;
         --code-bg: #222;
     }
+
     body {
         background: var(--bg);
         color: var(--fg);
@@ -14,32 +15,38 @@
         padding: 0;
         line-height: 1.7;
     }
+
     header {
         background: var(--card);
-        padding: 2rem 1rem 1rem 1rem;
+        padding: 2rem 1rem 1rem;
         text-align: center;
         border-bottom: 1px solid var(--border);
     }
+
     h1 {
         color: var(--accent);
         margin-bottom: 0.2em;
     }
+
     nav {
         background: var(--card);
         padding: 1rem;
         border-bottom: 1px solid var(--border);
     }
+
     nav a {
         color: var(--accent);
         margin-right: 1.5em;
         text-decoration: none;
         font-weight: bold;
     }
+
     main {
         max-width: 900px;
         margin: 2rem auto;
         padding: 1rem;
     }
+
     section {
         background: var(--card);
         margin-bottom: 2rem;
@@ -47,28 +54,33 @@
         border-radius: 8px;
         border: 1px solid var(--border);
     }
+
     h2 {
         color: var(--accent);
         margin-top: 0;
     }
+
     code, pre {
         background: var(--code-bg);
         color: #e6db74;
         padding: 0.2em 0.4em;
         border-radius: 4px;
-        font-family: 'Fira Mono', 'Consolas', monospace;
+        font-family: 'Fira Mono', Consolas, monospace;
         font-size: 1em;
     }
+
     pre {
         display: block;
         padding: 1em;
         overflow-x: auto;
         margin: 1em 0;
     }
+
     ul {
         margin: 0.5em 0 0.5em 1.5em;
     }
-    @media (max-width: 600px) {
+
+    @media (width <= 600px) {
         main { padding: 0.5rem; }
         section { padding: 1rem; }
     }
